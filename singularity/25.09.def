@@ -1,0 +1,6 @@
+Bootstrap: docker
+From: nvcr.io/nvidia/pytorch:25.09-py3
+
+%post
+  pip uninstall -y nvidia-modelopt nvidia-modelopt-core
+  pip install --no-cache-dir wandb transformers datasets jsonlines tqdm
