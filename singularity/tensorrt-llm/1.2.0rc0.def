@@ -1,0 +1,5 @@
+Bootstrap: docker
+From: nvcr.io/nvidia/tensorrt-llm/release:1.2.0rc0
+
+%post
+  pip install --no-cache-dir wandb transformers datasets jsonlines tqdm
